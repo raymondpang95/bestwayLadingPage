@@ -6,40 +6,14 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Short Trip</title>
 		<link rel="icon" href="image/bestwayLogo.png" />
-		<link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet" />
+
 		<style>
-			@media (min-width: 1px) and (max-width: 420px) {
-				.container {
-					padding-left: 8px;
-					padding-right: 8px;
-				}
-			}
-			@media (min-width: 421px) and (max-width: 768px) {
-				.container {
-					max-width: 100%;
-				}
-				.sm-hide {
-					display: none;
-				}
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
 			}
 
-			@media (min-width: 769px) and (max-width: 1024px) {
-				.container {
-					max-width: 100%;
-				}
-				.md-hide {
-					display: none;
-				}
-			}
-
-			@media (min-width: 1025px) and (max-width: 1364px) {
-				.container {
-					max-width: 100%;
-				}
-				.lg-hide {
-					display: none;
-				}
-			}
 			a,
 			.href {
 				color: #89331b;
@@ -49,54 +23,16 @@
 			}
 
 			body {
-				font-family: 'Merriweather', -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC,
-					Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+				font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Microsoft YaHei',
+					'Source Han Sans SC', 'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif;
 				font-size: 16px;
 				color: #54565b;
-				background-color: #54565b;
+				background-color: white;
 				min-width: 315px;
 				overflow-x: hidden;
 				font-smooth: always;
 				-webkit-font-smoothing: antialiased;
 				margin: 0;
-			}
-			.col-12 {
-				-webkit-box-flex: 0;
-				-ms-flex: 0 0 100%;
-				flex: 0 0 100%;
-				max-width: 100%;
-			}
-			@media (min-width: 421px) {
-				.sm-col-12 {
-					-webkit-box-flex: 0;
-					-ms-flex: 0 0 100%;
-					flex: 0 0 100%;
-					max-width: 100%;
-				}
-			}
-			@media (min-width: 1025px) {
-				.lg-col-12 {
-					-webkit-box-flex: 0;
-					-ms-flex: 0 0 100%;
-					flex: 0 0 100%;
-					max-width: 100%;
-				}
-			}
-
-			@media (min-width: 769px) {
-				.md-col-12 {
-					-webkit-box-flex: 0;
-					-ms-flex: 0 0 100%;
-					flex: 0 0 100%;
-					max-width: 100%;
-				}
-			}
-			* {
-				font-family: 'ZCOOL XiaoWei', serif;
-
-				-webkit-box-sizing: border-box;
-				box-sizing: border-box;
-				background-color: white;
 			}
 
 			.container {
@@ -109,29 +45,22 @@
 			}
 
 			.row {
-				display: -webkit-box;
-				display: -ms-flexbox;
 				display: flex;
-				-ms-flex-wrap: wrap;
 				flex-wrap: wrap;
 			}
 			header .logo {
-				-webkit-box-pack: center;
-				-ms-flex-pack: center;
-				justify-content: center;
-				display: -webkit-box;
-				display: -ms-flexbox;
-				display: flex;
+				text-align: center;
 			}
 
 			header .logo img {
 				margin-top: 20px;
-				width: 180px;
 			}
 
 			header .coverImageTitle {
 				display: block;
 				width: 100%;
+				flex: 0 0 100%;
+				max-width: 100%;
 				position: relative;
 				-webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
 				box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
@@ -152,9 +81,10 @@
 			}
 
 			header .coverImageTitle .word p {
-				font-size: 16px;
-				color: gray;
-				line-height: 1.4;
+				font-size: 18px;
+				color: #4c4c4c;
+				line-height: 1.3;
+				padding: 15px;
 			}
 
 			header .coverImageTitle .word p b {
@@ -191,7 +121,7 @@
 
 			<div class="container">
 				<div class="row mt3">
-					<div class=" lg-col-12 md-col-12 sm-col-12 col-12 coverImageTitle">
+					<div class="coverImageTitle">
 						<div class="coverContent"><img src="image/CoverImageNew.jpg" alt="" /></div>
 						<div style="text-align: center" class="word">
 							<p>
@@ -206,7 +136,7 @@
 				</div>
 
 				<div class="row mt2">
-					<div class="lg-col-12 md-col-12 sm-col-12 col-12 coverImageTitle">
+					<div class=" coverImageTitle">
 						<div class="coverContent"><img src="image/desaru.jpg" alt="" /></div>
 						<div class="word">
 							<p class="h3"><b> 迪沙鲁 Desaru</b></p>
@@ -218,7 +148,7 @@
 						</div>
 					</div>
 
-					<div class="lg-col-12 md-col-12 sm-col-12 col-12 coverImageTitle mt2">
+					<div class=" coverImageTitle mt2">
 						<div class="coverContent"><img src="image/kotatinggi.jpg" alt="" /></div>
 						<div class="word">
 							<p class="h3"><b> 哥打丁宜 Kota Tinggi</b></p>
@@ -230,7 +160,7 @@
 						</div>
 					</div>
 
-					<div class="lg-col-12 md-col-12 sm-col-12 col-12 coverImageTitle mt2">
+					<div class=" coverImageTitle mt2">
 						<div class="coverContent"><img src="image/kukup.jpg" alt="" /></div>
 						<div class="word">
 							<p class="h3"><b>龟咯 Kukup</b></p>
@@ -243,7 +173,7 @@
 						</div>
 					</div>
 
-					<div class="lg-col-12 md-col-12 sm-col-12 col-12 coverImageTitle mt2">
+					<div class=" coverImageTitle mt2">
 						<div class="coverContent"><img src="image/pekannanas.jpg" alt="" /></div>
 						<div class="word">
 							<p class="h3"><b>北干那那 Pekan Nanas</b></p>
@@ -255,7 +185,7 @@
 						</div>
 					</div>
 
-					<div class="lg-col-12 md-col-12 sm-col-12 col-12 coverImageTitle mt2">
+					<div class="coverImageTitle mt2">
 						<div class="coverContent"><img src="image/mersing.jpg" alt="" /></div>
 						<div class="word">
 							<p class="h3"><b>拉哇岛 Pulau Rawa</b></p>
@@ -263,33 +193,35 @@
 								对马尔代夫那碧海连天的美景眷恋不已？ 位于柔佛的拉哇岛（Pulau
 								Rawa），让你不用出国，就仿佛就在马尔代夫度假呀！
 								但这里的风景和生态绝对能够让你暂时忘却工作的烦恼。
-								无论是浮浅在清澈见底的海水里，欣赏美丽的珊瑚群；还是漫步在洁白如雪的沙滩，欣赏海天一线的海景，都让人心生向往啊！
+								无论是浮浅在清澈见底的海水里，欣赏美丽的珊瑚群；
+								还是漫步在洁白如雪的沙滩，欣赏海天一线的海景，都让人心生向往啊！
 							</p>
 						</div>
 					</div>
 
-					<div class="lg-col-12 md-col-12 sm-col-12 col-12 coverImageTitle mt2">
+					<div class=" coverImageTitle mt2">
 						<div class="coverContent"><img src="image/nationalpark.jpg" alt="" /></div>
 						<div class="word">
 							<p class="h3"><b>兴楼河 Endau Rompin</b></p>
 							<p>
-								国家公园的主流。宽广的河面，加上蜿蜒又清澈的河道， 形成让大自然爱好者好好泛舟的游乐园！
+								国家公园的主流。宽广的河面，加上蜿蜒又清澈的河道，形成让大自然爱好者好好泛舟的游乐园！
 								在泛舟的沿途中，一系列“绿色风景”铺天盖地呈现在你眼前。
 							</p>
 						</div>
 					</div>
 
-					<div class="lg-col-12 md-col-12 sm-col-12 col-12 coverImageTitle mt2">
+					<div class=" coverImageTitle mt2">
 						<div class="coverContent"><img src="image/legoland.jpg" alt="" /></div>
 						<div class="word">
 							<p class="h3"><b>乐高乐园 Legoland</b></p>
 							<p>
-								亚洲的第一座乐高乐园，设有主题乐园和水上乐园，包含70多项游乐设施、表演节目和景区，全家大小皆可以在乐高积木的奇幻世界，玩得畅快淋漓。
+								亚洲的第一座乐高乐园，设有主题乐园和水上乐园， 包含70多项游乐设施、表演节目和景区，
+								全家大小皆可以在乐高积木的奇幻世界，玩得畅快淋漓。
 							</p>
 						</div>
 					</div>
 
-					<div class="lg-col-12 md-col-12 sm-col-12 col-12 coverImageTitle mt2">
+					<div class=" coverImageTitle mt2">
 						<div class="coverContent"><img src="image/batupahat.jpg" alt="" /></div>
 						<div class="word">
 							<p class="h3"><b>峇株巴辖 Batu Pahat</b></p>
@@ -301,7 +233,7 @@
 						</div>
 					</div>
 
-					<div class="lg-col-12 md-col-12 sm-col-12 col-12 coverImageTitle mt2 " style="text-align: center;">
+					<div class=" coverImageTitle mt2 " style="text-align: center;">
 						<div class="coverContent"><img src="image/van.jpg" alt="" /></div>
 						<div class="word">
 							<p>
