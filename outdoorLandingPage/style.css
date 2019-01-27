@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+  padding: 16px 8px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #666666;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  width: 203px;
+}
+
+.card {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin-bottom: 20px;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card .content {
+  padding: 16px;
+}
+
+.card .content.center {
+  text-align: center;
+}
+
+.card .content h1,
+.card .content .h1 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.card .content h1 span,
+.card .content .h1 span {
+  color: #c1434f;
+}
+
+.card .content .text span {
+  font-weight: 700;
+  color: #c1434f;
+}
+
+.card .content .button {
+  text-decoration: none;
+  margin-top: 20px;
+  display: block;
+  outline: none;
+  border: none;
+  background: green;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  border-radius: 15px;
+}
+
+.card .content .websiteLink {
+  display: block;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=style.css.map */
