@@ -79,6 +79,7 @@
 				text-align: center;
 				padding: 8px;
 				border-radius: 15px;
+				width: 100%;
 			}
 
 			.card .content .websiteLink {
@@ -88,6 +89,35 @@
 
 			/*# sourceMappingURL=style.css.map */
 		</style>
+		<!-- Facebook Pixel Code -->
+		<script>
+			!(function(f, b, e, v, n, t, s) {
+				if (f.fbq) return;
+				n = f.fbq = function() {
+					n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+				};
+				if (!f._fbq) f._fbq = n;
+				n.push = n;
+				n.loaded = !0;
+				n.version = '2.0';
+				n.queue = [];
+				t = b.createElement(e);
+				t.async = !0;
+				t.src = v;
+				s = b.getElementsByTagName(e)[0];
+				s.parentNode.insertBefore(t, s);
+			})(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+			fbq('init', '2216750401887257');
+			fbq('track', 'PageView');
+		</script>
+		<noscript
+			><img
+				height="1"
+				width="1"
+				style="display:none"
+				src="https://www.facebook.com/tr?id=2216750401887257&ev=PageView&noscript=1"
+		/></noscript>
+		<!-- End Facebook Pixel Code -->
 	</head>
 
 	<body>
@@ -223,13 +253,18 @@
 					心动不如行动 马上联络我们<br />
 					+65 8119 7640<br />
 				</p>
-				<a
-					href="https://api.whatsapp.com/send?phone=6581197640&text=%E6%88%91%E6%83%B3%E8%AF%A2%E9%97%AE%E6%9B%B4%E5%A4%9A"
-					class="button"
-					>立即 Whatsapp</a
-				>
+				<button id="whatsappButton" class="button">立即 Whatsapp</button>
 				<a href="https://www.bestwaysgmytransport.com/" class="websiteLink">了解更多</a>
 			</div>
 		</div>
+		<script>
+			document.getElementById('whatsappButton').addEventListener('click', function() {
+				fbq('track', 'Lead');
+				window.open(
+					'https://api.whatsapp.com/send?phone=6581197640&text=%E6%88%91%E6%83%B3%E8%AF%A2%E9%97%AE%E6%9B%B4%E5%A4%9A',
+					'whatsApp window'
+				);
+			});
+		</script>
 	</body>
 </html>
